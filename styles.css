@@ -23,6 +23,16 @@
     isolation: isolate;
   }
 
+  /*FONTS*/
+  @font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+  }
+  body{
+    font-family: roboto, system-ui;
+  }
+
+
 /*page grid layout styling*/
 .container{
     display: grid;
@@ -123,6 +133,7 @@ input{
     border: none;
     background-color: rgb(52, 116, 235);
     color: white;
+    font-weight: bold;
 
 }
 
@@ -130,4 +141,7 @@ input{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 15px 35px
+}
+.hi-there p{
+    font-weight: bold;
 }
