@@ -1,0 +1,133 @@
+/*CSS RESET*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*page grid layout styling*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    border: 2px solid black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.sidebar{
+    border: 2px solid red;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.main-content{
+    border: 2px solid green;
+}
+
+
+/*Styling for the header*/
+
+/*first section*/
+.search-icon{
+    width: 25px;
+    display: flex;
+}
+.notification-icon{
+    width: 25px;
+}
+.profile-icon1{
+    width: 50px;
+    background-color: rgb(242, 228, 37);
+    border-radius: 50px;
+    padding: 5px;
+}
+.input{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 95%;
+    border-radius: 20px;
+    background-color: rgb(219, 216, 216);
+    border: none;
+    height: 30px;
+}
+.profile-icon2{
+    width: 70px;
+    background-color:rgb(242, 228, 37) ;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0px;
+
+}
+.admin-name1{
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.header>div:first-child{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 15px 35px;
+}
+
+/*second section*/
+.section2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+.new, .upload, .share{
+    height: 38px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(52, 116, 235);
+    color: white;
+
+}
+
+.header>div:last-child{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 15px 35px
+}
