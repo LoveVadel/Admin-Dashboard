@@ -36,24 +36,25 @@
 /*page grid layout styling*/
 .container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 10fr;
 }
 
 .header{
-    border: 2px solid black;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 .sidebar{
-    border: 2px solid red;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 .main-content{
-    border: 2px solid green;
+    background-color: rgb(219, 216, 216);
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    gap: 20px;
 }
 
 
@@ -179,4 +180,40 @@ input{
     text-decoration: none;
     color: inherit;
 }
+
+/*styling of the main content*/
+.projects{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.announcements{
+    border: 2px solid gray;
+}
+
+.project-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 5px;
+}
+.project-grid img{
+    width: 25px;
+}
+
+.project-grid{
+    background-color: white;
+    border-left: 8px solid rgb(242, 228, 37);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    gap: 5px;
+    padding: 20px;
+}
+
+.icon-class{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+
 
